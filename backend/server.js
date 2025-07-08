@@ -13,6 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); //JSON formatında veri gönderdiğinde, bu veri req.body üzerinden kolayca erişilebilir olur.
+app.use(cors());
 app.use(helmet()); //XSS, tıklama kaçakçılığı (clickjacking) ve bazı diğer saldırı türlerine karşı ek koruma sağlar
 app.use(morgan("dev"));
 

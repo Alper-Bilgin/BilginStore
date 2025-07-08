@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [daisyui],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: ["pastel", "retro", "coffee", "forest", "cyberpunk", "synthwave", "luxury", "autumn", "valentine", "aqua", "business", "night", "dracula"],
   },
